@@ -11,7 +11,9 @@ import SwiftUI
 struct BikeStationsApp: App {
     var body: some Scene {
         WindowGroup {
-            StationsListView(viewModel: StationListViewModel())
+            let client = APIClient(baseUrl: "https://www.poznan.pl/")
+            let repo = StationsRepository(client: client)
+            StationsListView(viewModel: StationListViewModel(repository: repo))
         }
     }
 }

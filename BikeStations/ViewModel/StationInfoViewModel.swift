@@ -25,7 +25,7 @@ class StationInfoViewModel: ObservableObject {
         
         title = "\(station.id) \(station.properties.name)"
         type = "Bike Station"
-        distance = "\(Int(station.distance))m"
+        distance = "\(Int(station.distanceValue))m"
         availableBikesTitle = "Available bikes"
         availableBikes = station.properties.bikesAvailable
         availablePlacesTitle = "Available places"

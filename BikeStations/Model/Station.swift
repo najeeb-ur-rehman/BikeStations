@@ -12,8 +12,11 @@ struct Station: Codable {
     var id: String
     var geometry: Geometry
     var properties: StationProperties
-    var distance = 0.0
+    var distance: Double?
     
+    var distanceValue: Double {
+        distance ?? 0.0
+    }
 }
 
 extension Station {

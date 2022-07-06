@@ -20,6 +20,10 @@
 		69A759832874C7060023CE13 /* StationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A759822874C7060023CE13 /* StationInfoViewModel.swift */; };
 		69A759872874DB700023CE13 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A759862874DB700023CE13 /* StationListViewModel.swift */; };
 		69A759892874E8790023CE13 /* StationInfoMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A759882874E8790023CE13 /* StationInfoMapViewModel.swift */; };
+		69A7598C28755DCC0023CE13 /* StationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A7598B28755DCC0023CE13 /* StationRepository.swift */; };
+		69A7598F28755E120023CE13 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A7598E28755E120023CE13 /* APIClient.swift */; };
+		69A75991287561BB0023CE13 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A75990287561BB0023CE13 /* HTTPRequest.swift */; };
+		69A75994287562690023CE13 /* StationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A75993287562690023CE13 /* StationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		69A759822874C7060023CE13 /* StationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInfoViewModel.swift; sourceTree = "<group>"; };
 		69A759862874DB700023CE13 /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
 		69A759882874E8790023CE13 /* StationInfoMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInfoMapViewModel.swift; sourceTree = "<group>"; };
+		69A7598B28755DCC0023CE13 /* StationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRepository.swift; sourceTree = "<group>"; };
+		69A7598E28755E120023CE13 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		69A75990287561BB0023CE13 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		69A75993287562690023CE13 /* StationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 		6968B6C12874AE5700EA25F7 /* BikeStations */ = {
 			isa = PBXGroup;
 			children = (
+				69A7598D28755DDC0023CE13 /* Services */,
+				69A7598A28755D9E0023CE13 /* Repository */,
 				69A7597B2874BF010023CE13 /* Model */,
 				69A759842874D9830023CE13 /* View */,
 				69A759852874D9A20023CE13 /* ViewModel */,
@@ -116,6 +126,32 @@
 				69A759882874E8790023CE13 /* StationInfoMapViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		69A7598A28755D9E0023CE13 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				69A75992287562530023CE13 /* Station */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		69A7598D28755DDC0023CE13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69A7598E28755E120023CE13 /* APIClient.swift */,
+				69A75990287561BB0023CE13 /* HTTPRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69A75992287562530023CE13 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				69A7598B28755DCC0023CE13 /* StationRepository.swift */,
+				69A75993287562690023CE13 /* StationRequest.swift */,
+			);
+			path = Station;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +232,11 @@
 				69A759832874C7060023CE13 /* StationInfoViewModel.swift in Sources */,
 				69A759812874C62D0023CE13 /* Place.swift in Sources */,
 				69A759742874B70F0023CE13 /* StationsListView.swift in Sources */,
+				69A7598C28755DCC0023CE13 /* StationRepository.swift in Sources */,
+				69A7598F28755E120023CE13 /* APIClient.swift in Sources */,
 				69A759782874BA5A0023CE13 /* Station.swift in Sources */,
+				69A75991287561BB0023CE13 /* HTTPRequest.swift in Sources */,
+				69A75994287562690023CE13 /* StationRequest.swift in Sources */,
 				69A7597F2874BF4E0023CE13 /* StationProperties.swift in Sources */,
 				69A759762874B7B00023CE13 /* StationInfoView.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ struct StationsListView: View {
     
     var body: some View {
         if viewModel.stations.isEmpty {
-            Text("No stations to show...")
+            Text(viewModel.message)
         } else {
             NavigationView {
                 List(viewModel.stations, id: \.id) { station in
@@ -31,13 +31,5 @@ struct StationsListView: View {
             }
             .accentColor(.black)
         }
-    }
-}
-
-
-struct StationsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        StationsListView(viewModel: StationListViewModel())
-            .previewDevice("iPhone 13 Pro Max")
     }
 }
