@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct StationProperies: Codable {
+struct StationProperties: Codable {
     var name: String
     var bikesAvailable: String
     var placesAvailable: String
